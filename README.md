@@ -1,42 +1,76 @@
 🍴 Restaurant Billing Software
 
-A simple Restaurant Billing Software built with Streamlit that allows restaurant owners to manage menu items, generate bills, and store records in an SQLite database.
+A complete Restaurant Billing System built with Streamlit.
+This project helps restaurants manage their menu, generate bills, authenticate users, and store transaction records securely in an SQLite database.
 
-📌 Features
+✨ Features
 
-📝 Add & Manage Food Items (stored in SQLite database)
+🔐 User Authentication
 
-📊 Interactive Dashboard built using Streamlit
+Admin / Cashier login system
 
-💰 Billing System – generate bills for selected items
+Secure access to billing and database
 
-🕒 Date & Time support using datetime
+📝 Menu Management
 
-📄 Generate PDF Bill Receipts using FPDF
+Add / Update / Delete food items
 
-📷 QR Code Generation for quick payment reference
+Store all menu items in SQLite database
 
-💾 Store and Retrieve Bills for future records
+💰 Billing System
+
+Select multiple food items with quantity
+
+Auto calculate total price & taxes
+
+Store transaction history
+
+📄 PDF Bill Generation
+
+Generate printable PDF receipts using FPDF
+
+Customer details + order details + bill total
+
+📷 QR Code Integration
+
+Generate QR code for easy UPI/Payment reference
+
+QR embedded inside bill PDF
+
+📊 Dashboard & Reports
+
+View daily sales
+
+Search old bills
+
+Filter by date
+
+🕒 Date & Time Support
+
+Auto timestamp on every bill
 
 🛠️ Tech Stack
 
 Streamlit
- – UI & Dashboard
+ – Frontend & Dashboard
 
 SQLite3
  – Database
 
 Pandas
- – Data handling
+ – Data management
 
 streamlit-option-menu
- – Sidebar navigation
+ – Sidebar Navigation
 
 FPDF
  – PDF generation
 
 qrcode
  – QR Code generation
+
+datetime
+ – Bill timestamps
 
 ⚙️ Installation
 
@@ -48,11 +82,11 @@ cd restaurant-billing
 
 Install dependencies using pip
 
-pip install streamlit
-pip install pandas
-pip install fpdf
-pip install qrcode
-pip install streamlit-option-menu
+<p>pip install streamlit</p>
+<p>pip install pandas</p>
+<p>pip install fpdf</p>
+<p>pip install qrcode</p>
+<p>pip install streamlit-option-menu</p>
 
 
 Run the Streamlit App
@@ -61,13 +95,28 @@ streamlit run app.py
 
 🚀 Usage
 
-Start the app using streamlit run app.py.
+Start the app with streamlit run app.py
 
-Use the sidebar menu to:
+Login as Admin / Cashier
 
-Add / Update food items in the database.
+Use the sidebar to:
 
-Select food items and generate a bill.
+📋 Manage menu items
 
-Export bill as PDF with QR code for payment.
+🧾 Generate bills
 
+📄 Download PDF bill with QR code
+
+📊 Check sales reports
+
+🔮 Future Scope
+
+🌍 Multi-branch support
+
+💳 Integrate payment gateways (Stripe / Razorpay / Paytm / UPI)
+
+📱 Mobile-friendly UI
+
+📈 Export analytics (CSV/Excel)
+
+☁️ Cloud deployment for online usage
