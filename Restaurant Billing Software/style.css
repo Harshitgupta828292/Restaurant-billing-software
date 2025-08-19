@@ -1,0 +1,42 @@
+:root{
+    --mainColor:#f6f8fa;
+    --darkBlack:#2d2f31;
+    --darkGrey:#61666b;
+    --grey:#d5d5d5;
+    --lightGrey:#f2f2f2;
+    --yellow:#fecb40;
+    --red:#df113c;
+}
+*{
+    margin: 0;
+    padding: 0;
+   outline:none;
+   box-sizing: border-box;
+   font-family: "Noto Sans", sans-serif;
+}
+body{
+    width:100%;
+    height:auto;
+    color:var(--darkBlack);
+}
+p{
+    font-size: 14px;
+   
+}
+.label-cart{
+    position:fixed;
+    top:15;
+    right:10;
+    z-index: 4;
+    cursor:pointer;
+}
+.logo{
+    position:fixed;
+    background-color: var(--darkBlack);
+    color:var(--lightGrey);
+    width:100%;
+    text-align: centre;
+    padding:15px 420px 15px 60px;
+    top:0;
+    z-index: 2;;
+}
